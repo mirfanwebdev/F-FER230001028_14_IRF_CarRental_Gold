@@ -6,12 +6,13 @@
 
 .container-hero {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 32px;
   padding-top: 53px;
 }
 
 .container-text {
+  width: 568px;
   display: flex;
   flex-direction: column;
   justify-content: center;
