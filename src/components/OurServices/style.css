@@ -1,0 +1,23 @@
+.section-service {
+  padding: 104px 207px;
+  display: flex;
+  gap: 100px;
+}
+
+.container-img {
+  width: 460px;
+}
+
+.container-text-service {
+  width: 468px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container-text-service li {
+  list-style: none;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}

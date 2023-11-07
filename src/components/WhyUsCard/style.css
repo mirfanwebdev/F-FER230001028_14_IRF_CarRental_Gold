@@ -1,0 +1,20 @@
+.container-why {
+  padding: 0 136px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container-card-whyus {
+  display: flex;
+  gap: 32px;
+}
+
+.card-why {
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
