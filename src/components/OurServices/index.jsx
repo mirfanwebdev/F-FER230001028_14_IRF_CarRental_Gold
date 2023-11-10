@@ -17,7 +17,12 @@ function OurServices() {
             <div className='container-text-service'>
                 <h2>Best Car Rental for any kind of trip in (Lokasimu)!</h2>
                 <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
-                {servicesList.map((item) => <li>{item}</li>)}
+                {servicesList.map((item) => (
+                    <div key={item.key} className='list'>
+                        <i className="bi bi-check-circle-fill"></i>
+                        <p>{item}</p>
+                    </div>
+                ))}
             </div>
         </div>
     )

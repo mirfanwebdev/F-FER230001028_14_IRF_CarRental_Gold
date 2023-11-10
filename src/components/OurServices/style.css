@@ -15,9 +15,18 @@
   gap: 16px;
 }
 
-.container-text-service li {
+.list {
+  display: flex;
+  gap: 20px;
+}
+
+.list p {
   list-style: none;
   gap: 16px;
   font-size: 14px;
   font-weight: 700;
+}
+
+.list .bi {
+  color: #0d28a6;
 }

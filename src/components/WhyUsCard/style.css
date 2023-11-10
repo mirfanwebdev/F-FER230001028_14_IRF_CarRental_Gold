@@ -18,3 +18,16 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.card-why div {
+  background-color: #f9cc00;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.75;
+}
+
+.bi {
+  color: white;
+}
