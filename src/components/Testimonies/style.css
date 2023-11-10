@@ -12,6 +12,7 @@
   display: flex;
   gap: 16px;
   border-radius: 8px;
+  width: 100%;
 }
 
 .testimony-card {
@@ -19,6 +20,10 @@
   align-items: center;
   padding: 69px 32px;
   background-color: aquamarine;
+  position: relative;
+  width: 619px;
+  left: -10%;
+  right: -10%;
 }
 
 .card-text {
