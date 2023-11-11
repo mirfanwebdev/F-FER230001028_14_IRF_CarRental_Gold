@@ -1,30 +1,15 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import axios from "axios";
+import './styles.css'
 
-function CarList() {
-    const [cars, setCars] = useState([])
-
-    useEffect(() => {
-        handleGetCar()
-    }, [])
-
-    const handleGetCar = () => {}
-        axios
-        .get('https://api-car-rental.binaracademy.org/customer/v2/car')
-        .then((res) => {
-            const carData = res.data.cars
-            setCars(carData)
-        })
-        .catch((err) => console.log(err))
-
+function CarList({ cars }) {
+    
     return (
-        <div>
+        <div className="car-list-container">
             {cars.map((item) => (
-                <div key={item.id}>
+                <div key={item.id} className="car-card">
                     <img src={item.image} />
                     <p>{item.name}</p>
                     <h2>Rp. {item.price}/ hari</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <button>Pilih Mobil</button>
                 </div>
             ))}

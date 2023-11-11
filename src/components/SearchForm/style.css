@@ -1,0 +1,40 @@
+.container-searchbar {
+  margin: 0 196px;
+  padding: 24px;
+  position: relative;
+  top: -60px;
+  border-radius: 8px;
+  background: var(--neutral-01, #fff);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+form {
+  display: flex;
+  gap: 16px;
+}
+
+form label {
+  display: block;
+  color: #3c3c3c;
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+
+form input,
+form select {
+  width: 211px;
+  font-size: 12px;
+  padding: 9px 12px;
+}
+
+.submit-form {
+  padding: 10px 12px;
+  width: fit-content;
+  height: fit-content;
+  font-weight: 700;
+  align-self: flex-end;
+  background-color: #5cb85f;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+}
