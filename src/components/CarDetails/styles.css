@@ -46,3 +46,23 @@
   padding-top: 55px;
   padding-bottom: 84px;
 }
+
+@media screen and (max-width: 576px) {
+  .detail-card {
+    flex-direction: column;
+    margin: 0 16px;
+  }
+
+  .package-detail {
+    width: auto;
+  }
+
+  .container-car-detail {
+    padding: 16px;
+  }
+
+  .container-car-detail img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,66 @@
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .mobile {
+    display: inline;
+    position: absolute;
+    top: 29px;
+    right: 16px;
+  }
+
+  .mobile button {
+    border: 0;
+  }
+
+  .mobile .bi {
+    color: #000;
+    font-size: 24px;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    background-color: white;
+    padding: 34px 24px 34px 16px;
+  }
+
+  .mobile-menu div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-menu .bi {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .mobile-menu p {
+    margin: 0;
+  }
+
+  .mobile-menu button {
+    background-color: transparent;
+    border: none;
+  }
+
+  .mobile-menu .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .menu-list a {
+    color: #000;
+    text-decoration: none;
+  }
+}

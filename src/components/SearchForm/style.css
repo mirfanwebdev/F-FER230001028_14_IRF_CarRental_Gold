@@ -38,3 +38,23 @@ form select {
   border: 0;
   border-radius: 2px;
 }
+
+@media screen and (max-width: 576px) {
+  .container-searchbar {
+    margin: 0 16px;
+    top: -200px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form input,
+  form select {
+    width: 100%;
+  }
+
+  .submit-form {
+    align-self: flex-start;
+  }
+}
