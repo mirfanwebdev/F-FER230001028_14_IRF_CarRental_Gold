@@ -37,8 +37,8 @@ function Testimonies() {
             ))}
           </div>  
           <div className='container-button-arrow'>
-            <button>left</button>
-            <button>right</button>
+            <button><i className="bi bi-arrow-left-circle-fill"></i></button>
+            <button><i className="bi bi-arrow-right-circle-fill"></i></button>
           </div>
         </div>
     )

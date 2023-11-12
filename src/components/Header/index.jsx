@@ -1,10 +1,11 @@
 import './style.css'
+import logo from '../../assets/minivan-logo.svg'
 
 function Header() {
     return(
         <div className='container-head'>
             <div>
-                <div className='logo-dummy'></div>
+                <img className='logo' src={logo} alt='logo' />
             </div>
             <div className='container-link'>
                 <a href='#our-services'>our services</a>

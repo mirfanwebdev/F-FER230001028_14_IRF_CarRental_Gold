@@ -1,4 +1,5 @@
 import './styles.css'
+import logo from '../../assets/minivan-logo.svg'
 
 function Footer() {
     return (
@@ -28,7 +29,7 @@ function Footer() {
             </div>
             <div className="copyright">
                 <p>Copyright Binar 2022</p>
-                <div className="logo-dummy"></div>
+                <img className='logo' src={logo} alt='logo' />
             </div>
         </div>
     )

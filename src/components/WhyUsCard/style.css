@@ -28,6 +28,18 @@
   line-height: 1.75;
 }
 
+.card-why:nth-of-type(2) div {
+  background: #fa2c5a;
+}
+
+.card-why:nth-of-type(3) div {
+  background: #0d28a6;
+}
+
+.card-why:nth-of-type(4) div {
+  background: #5cb85f;
+}
+
 .bi {
   color: white;
 }

@@ -31,7 +31,7 @@ function WhyUsCard() {
                 {cardList.map((list) => (
                     <div className='card-why' key={list.id}>
                         <div>
-                        <i class={list.icon}></i>
+                        <i className={list.icon}></i>
                         </div>
                         <p>{list.title}</p>
                         <p>{list.desc}</p>
