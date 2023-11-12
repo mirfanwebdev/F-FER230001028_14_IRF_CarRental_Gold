@@ -37,3 +37,27 @@
   gap: 30px;
   justify-content: center;
 }
+
+@media screen and (max-width: 576px) {
+  .container-testimony-section {
+    padding-top: 60px;
+  }
+
+  .container-testimony {
+    padding: 0 16px;
+  }
+
+  .testimony-card {
+    width: fit-content;
+    padding: 40px 32px;
+    flex-direction: column;
+  }
+
+  .testimony-card:nth-of-type(2) {
+    display: none;
+  }
+
+  .testimony-card:nth-of-type(3) {
+    display: none;
+  }
+}

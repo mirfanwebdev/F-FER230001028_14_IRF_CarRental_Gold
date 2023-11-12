@@ -7,10 +7,10 @@ function Header() {
                 <div className='logo-dummy'></div>
             </div>
             <div className='container-link'>
-                <a>our services</a>
-                <a>why us</a>
-                <a>testimonial</a>
-                <a>faq</a>
+                <a href='#our-services'>our services</a>
+                <a href='#why-us'>why us</a>
+                <a href='#testimony'>testimonial</a>
+                <a href='#faq'>faq</a>
             </div>
         </div>
     )

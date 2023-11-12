@@ -25,3 +25,19 @@
 .accordion-body p {
   font-weight: 400;
 }
+
+@media screen and (max-width: 576px) {
+  .container-faq-section {
+    flex-direction: column;
+    margin: 0 16px;
+  }
+
+  .container-faq-title {
+    width: initial;
+    text-align: center;
+  }
+
+  .container-faq {
+    width: 100%;
+  }
+}

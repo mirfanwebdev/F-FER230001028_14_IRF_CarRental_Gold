@@ -25,8 +25,30 @@
   gap: 16px;
   font-size: 14px;
   font-weight: 700;
+  margin: 0;
 }
 
 .list .bi {
   color: #0d28a6;
+}
+
+@media screen and (max-width: 576px) {
+  .section-service {
+    padding: 16px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .container-img {
+    width: 252px;
+    margin: 0 auto;
+  }
+
+  .container-img img {
+    width: 100%;
+  }
+
+  .container-text-service {
+    width: initial;
+  }
 }

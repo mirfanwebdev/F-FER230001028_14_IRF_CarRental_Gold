@@ -20,8 +20,7 @@ function Hero({isHidden}) {
                     <div className='background'></div>
                 </div>
             </div> }
-            
-        </div>
+            </div>
     )
 }
 
