@@ -10,7 +10,7 @@ function OurServices() {
         'Layanan Airport Transfer / Drop In Out',
     ]
     return(
-        <div className='section-service'>
+        <div id='our-services' className='section-service'>
             <div className='container-img'>
                 <img src={imgService} alt='our-services-image' />
             </div>

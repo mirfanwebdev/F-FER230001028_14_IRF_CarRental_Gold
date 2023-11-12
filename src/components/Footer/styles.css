@@ -35,3 +35,10 @@
 .copyright {
   width: 268px;
 }
+
+@media screen and (max-width: 576px) {
+  .container-footer {
+    margin: 60px 16px;
+    flex-direction: column;
+  }
+}

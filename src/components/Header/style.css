@@ -17,6 +17,17 @@
   text-transform: capitalize;
 }
 
+.container-link a {
+  text-decoration: none;
+  color: black;
+}
+
 .container-link a:last-child {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  .container-link {
+    display: none;
+  }
 }

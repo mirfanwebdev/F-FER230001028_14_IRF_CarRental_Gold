@@ -31,3 +31,13 @@
 .bi {
   color: white;
 }
+
+@media screen and (max-width: 576px) {
+  .container-why {
+    padding: 16px;
+  }
+
+  .container-card-whyus {
+    flex-direction: column;
+  }
+}

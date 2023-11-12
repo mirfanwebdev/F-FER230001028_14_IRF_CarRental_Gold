@@ -2,7 +2,7 @@ import './styles.css'
 
 function Faq() {
     return (
-        <div className='container-faq-section'>
+        <div id='faq' className='container-faq-section'>
             <div className='container-faq-title'>
                 <h2>Frequently Asked Question</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>

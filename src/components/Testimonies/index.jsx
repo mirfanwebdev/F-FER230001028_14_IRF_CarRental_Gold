@@ -22,7 +22,7 @@ function Testimonies() {
     ]
 
     return(
-        <div className='container-testimony-section'>
+        <div id='testimony' className='container-testimony-section'>
             <h2>Testimonial</h2>
             <p>Berbagai review positif dari para pelanggan kami</p>
           <div className='container-testimony'>

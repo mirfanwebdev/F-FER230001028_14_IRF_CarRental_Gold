@@ -4,13 +4,13 @@ import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import SearchForm from "../../components/SearchForm";
 import axios from "axios";
-import './style.css'
 
 function SearchCarPage() {
     const [name, setName] = useState('')
     const [category, setCategory] = useState('')
     const [isRented, setIsRented] = useState(false)
     const [cars, setCars] = useState([])
+    const [isHidden] = useState(true)
 
     useEffect(() => {
         handleGetCar(name, category, isRented)
@@ -46,7 +46,7 @@ function SearchCarPage() {
 
     return (
         <>
-         <Hero/> 
+         <Hero isHidden={isHidden} /> 
          <SearchForm
             name={name}
             category={category}

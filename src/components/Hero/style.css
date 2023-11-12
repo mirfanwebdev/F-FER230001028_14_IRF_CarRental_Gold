@@ -4,6 +4,10 @@
   padding-top: 25px;
 }
 
+.blank {
+  height: 232px;
+}
+
 .container-hero {
   display: flex;
   justify-content: space-between;
@@ -49,4 +53,36 @@
   position: relative;
   top: -243px;
   z-index: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .container-section {
+    padding: 24px 16px;
+  }
+
+  .container-hero {
+    flex-direction: column;
+  }
+
+  .container-text {
+    width: initial;
+  }
+
+  .container-text p {
+    width: initial;
+  }
+
+  .container-image {
+    width: initial;
+    height: 198px;
+  }
+
+  .container-image img {
+    width: 100%;
+  }
+
+  .container-image .background {
+    height: 119px;
+    top: -119px;
+  }
 }
