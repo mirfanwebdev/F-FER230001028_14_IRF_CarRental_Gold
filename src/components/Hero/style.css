@@ -4,6 +4,10 @@
   padding-top: 25px;
 }
 
+.blank {
+  height: 232px;
+}
+
 .container-hero {
   display: flex;
   justify-content: space-between;

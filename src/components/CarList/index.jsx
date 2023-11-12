@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css'
 
 function CarList({ cars }) {
@@ -10,7 +11,9 @@ function CarList({ cars }) {
                     <p>{item.name}</p>
                     <h2>Rp. {item.price}/ hari</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button>Pilih Mobil</button>
+                    <Link to={`/search/${item.id}`}>
+                        <button>Pilih Mobil</button>
+                    </Link>
                 </div>
             ))}
         </div>
