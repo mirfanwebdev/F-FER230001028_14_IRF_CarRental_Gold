@@ -39,6 +39,13 @@ form select {
   border-radius: 2px;
 }
 
+.edit {
+  border-radius: 2px;
+  border: 1px solid #0d28a6;
+  background: #fff;
+  color: #0d28a6;
+}
+
 @media screen and (max-width: 576px) {
   .container-searchbar {
     margin: 0 16px;
