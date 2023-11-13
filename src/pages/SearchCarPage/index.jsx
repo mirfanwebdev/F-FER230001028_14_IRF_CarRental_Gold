@@ -12,7 +12,8 @@ function SearchCarPage() {
     const [minPrice, setMinPrice] = useState('')
     const [maxPrice, setMaxPrice] = useState('')
     const [isRented, setIsRented] = useState(false)
-    const [cars, setCars] = useState([])
+    const [cars, setCars] = useState([]);
+    const [isSubmit, setIsSubmit] = useState(false);
     const [isHidden] = useState(true)
 
     useEffect(() => {
@@ -32,8 +33,8 @@ function SearchCarPage() {
             .then((res) => {
                 const carData = res.data.cars
                 setCars(carData)
-                console.log(carData)
-                console.log(dataMinPrice, dataMaxPrice)
+                // console.log(carData)
+                // console.log(dataMinPrice, dataMaxPrice)
             })
             .catch((err) => console.log(err))
     }
@@ -68,11 +69,21 @@ function SearchCarPage() {
         }
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = () => {
         convertPrice();
         handleGetCar(name, category, isRented, minPrice, maxPrice)
         // console.log(name)
+    }
+
+    const convertButton = () => {
+        setIsSubmit(!isSubmit)
+    }
+
+    const handleIsSubmit = (e) => {
+        e.preventDefault();
+        convertButton();
+        handleSubmit();
+        // console.log(isSubmit)
     }
 
     return (
@@ -86,8 +97,9 @@ function SearchCarPage() {
             handleChangeName={handleChangeName}
             handleChangeCategory={handleChangeCategory}
             handleChangeStatus={handleChangeStatus}
-            handleSubmit={handleSubmit}
             handleChangePrice={handleChangePrice}
+            isSubmit={isSubmit}
+            handleIsSubmit={handleIsSubmit}
          /> 
          <CarList
             cars={cars}

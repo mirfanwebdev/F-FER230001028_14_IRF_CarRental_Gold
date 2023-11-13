@@ -5,17 +5,18 @@ function SearchForm({
     category, 
     price,
     isRented,
+    isSubmit,
     handleChangeName,
     handleChangeCategory,
-    handleChangeStatus,
-    handleSubmit,  
+    handleChangeStatus,  
     handleChangePrice,
+    handleIsSubmit,
 }) {
 
     return (
         <div className="container-searchbar">
             <p>Pencarianmu</p>         
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleIsSubmit}>
                 <div>
                     <label>Nama Mobil</label>
                     <input onChange={handleChangeName} type="text" value={name} placeholder="innova"/>
@@ -46,7 +47,11 @@ function SearchForm({
                         <option value={false}>Belum disewa</option>
                     </select>
                 </div>
-                <input className='submit-form' type='submit' value='Cari Mobil' />
+                {isSubmit ? 
+                    <input className='submit-form edit' type='submit' value='Edit' /> :
+                    <input className='submit-form' type='submit' value='Cari Mobil' />
+                }
+                
             </form>
         </div>
     )
