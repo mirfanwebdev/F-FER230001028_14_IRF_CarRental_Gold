@@ -3,11 +3,13 @@ import './style.css'
 function SearchForm({ 
     name, 
     category, 
+    price,
     isRented,
     handleChangeName,
     handleChangeCategory,
     handleChangeStatus,
     handleSubmit,  
+    handleChangePrice,
 }) {
 
     return (
@@ -29,10 +31,11 @@ function SearchForm({
                 </div>
                 <div>
                     <label>Harga</label>
-                    <select id="price" name="price">
+                    <select onChange={handleChangePrice} id="price" name="price" value={price}>
                         <option value={''}>Harga sewa perhari</option>
-                        <option value={''}>{`< Rp 400.000`}</option>
-                        <option value={''}>Rp 400.000 - Rp 600.000</option>
+                        <option value={'low'}>{`< Rp 400.000`}</option>
+                        <option value={'medium'}>Rp 400.000 - Rp 600.000</option>
+                        <option value={'high'}>{`> Rp 600.000`}</option>
                     </select>
                 </div>
                 <div>
