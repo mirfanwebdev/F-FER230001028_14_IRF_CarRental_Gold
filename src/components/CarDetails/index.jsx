@@ -94,7 +94,7 @@ function CarDetails() {
         ) : (
           <img src={NOTFOUND} alt={detail.name} />
         )}
-        <img src={detail.image} alt={detail.name} />
+        {/* <img src={detail.image} alt={detail.name} /> */}
         <p>{detail.name}</p>
         <span>
           <i class="bi bi-people"></i> {handleCategory(detail.category)}
