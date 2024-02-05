@@ -59,6 +59,7 @@
 
   .container-car-detail {
     padding: 16px;
+    height: -webkit-fit-content;
   }
 
   .container-car-detail img {
