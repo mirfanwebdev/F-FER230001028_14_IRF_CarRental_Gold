@@ -6,10 +6,9 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const base = "/f-fer230001028-14-irf-carrental-gold";
   return (
     <>
-      <BrowserRouter basename={base}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/search" element={<SearchCarPage />} />
