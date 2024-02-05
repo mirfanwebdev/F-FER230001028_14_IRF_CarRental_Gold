@@ -6,7 +6,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const base = "/f-fer230001028-14-irf-carrental-gold";
   return (
     <>
       <BrowserRouter>
@@ -14,7 +13,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/search" element={<SearchCarPage />} />
           <Route path="/search/:id" element={<DetailsPage />} />
-          {/* <Route path='/*' element={<NotFound/>} /> */}
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
