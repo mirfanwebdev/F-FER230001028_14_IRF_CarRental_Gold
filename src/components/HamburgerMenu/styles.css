@@ -10,6 +10,15 @@
     right: 16px;
   }
 
+  @keyframes displayMenu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .mobile button {
     border: 0;
   }
@@ -31,6 +40,8 @@
     z-index: 5;
     background-color: white;
     padding: 34px 24px 34px 16px;
+    animation-name: displayMenu;
+    animation-duration: 0.5s;
   }
 
   .mobile-menu div:first-of-type {

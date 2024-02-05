@@ -5,3 +5,18 @@
 .container-hero {
   display: none;
 } */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.pagination button {
+  background-color: #5cb85f;
+  color: white;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 10px;
+}

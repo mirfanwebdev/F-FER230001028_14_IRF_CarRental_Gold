@@ -45,4 +45,7 @@
   .car-list-container {
     margin: 0 16px;
   }
+  .car-card {
+    margin: auto;
+  }
 }
